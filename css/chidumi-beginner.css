@@ -1,0 +1,368 @@
+@charset "UTF-8"
+
+
+/* 共通部分
+---------------------------------------- */
+/* * {
+  box-sizing: border-box;
+} */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "游ゴシック体 Medium", "Yu Gothic Medium", "YuGothic", "游ゴシック体", "ピラギノ角ゴ　Pro W3", "sans-serif";
+  color: #333333;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+
+/* 共通ページ枠
+---------------------------------------- */
+.wrapper {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* HEADER
+---------------------------------------- */
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  margin-top: 12px;
+}
+.header-nav {
+  display: flex;
+  font-size: 18px;
+  list-style: none;
+  line-height: 60px;
+  font-weight: bold;
+}
+.header-nav li {
+  margin-left: 40px;
+}
+.header-nav a {
+  color: #333333;
+}
+.header-nav a:hover {
+  color: #AE0009;
+}
+
+
+/* MAIN
+---------------------------------------- */
+/* 背景写真 */
+#main-img {
+  background-image: url(../images/mv.jpg);
+  height: 605px;
+  margin-top: 60px;
+}
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+/* タイトル */
+#main-img .title {
+  text-align: center;
+  padding-top: 230px;
+}
+.title-logo {
+  width: 270px;
+}
+/* メッセージ */
+.main-massage {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 89px;
+  width: 650px;
+}
+article h2 {
+  font-size: 32px;
+  line-height: 1;
+}
+article p {
+  font-size: 20px;
+}
+.paragraph-1 {
+  line-height: 1.7;
+  margin-top: 43px;
+}
+.paragraph-2 {
+  line-height: 2.1;
+  margin-top: 32px;
+}
+.paragraph-3 {
+  line-height: 2.1;
+  margin-top: 28px;
+}
+
+
+/* CAT1
+---------------------------------------- */
+/* 背景 */
+#cat1 {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 1344px;
+}
+/* 見出し */
+.heading {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.heading h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+/* グリッド */
+.grid {
+  display: grid;
+  gap: 100px 30px;
+  grid-template-columns: repeat(2, minmax(240px,1fr));
+}
+/* アイテム(写真) */
+.item-img {
+  padding: 0 10px;
+  width: 470px;
+  height: 278px;
+}
+.box-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 278px
+}
+/* アイテム(文章) */
+.item-sentence {
+  padding: 0 10px;
+}
+.box-sentence {
+  width: 460px;
+  height: 278px;
+}
+.item-sentence h3 {
+  padding: 20px 44px 10px 0;
+  font-size: 26px;
+  border-bottom: 3px solid #AE0009;
+  line-height: 1;
+}
+.item-sentence p {
+  padding-top: 23.7px;
+  line-height: 1.7;
+  font-size: 18px;
+}
+/* 順序 */
+.od1 {
+  order: 1;
+}
+.od2 {
+  order: 2;
+}
+.od3 {
+  order: 3;
+}
+.od4 {
+  order: 4;
+}
+.od5 {
+  order: 5;
+}
+.od6 {
+  order: 6;
+}
+
+
+/* CAT2
+---------------------------------------- */
+/* 背景 */
+#cat2 {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 588px;
+}
+/* フレックスボックス(CAT2) */
+.flexbox-cat2 {
+  display: flex;
+  justify-content: space-between;
+}
+/* フレックスコンテンツ(CAT2) */
+.flex-content-cat2 {
+  width: 300px;
+  height: 378px;
+}
+.flex-content-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 185px;
+  vertical-align: bottom;
+  /* display: block; img下部のスペースを消すもう一つのやり方*/
+}
+.flex-content-cat2 p {
+  padding-top: 14.4px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+/* INTERMEDIAL SECTION
+---------------------------------------- */
+/* 背景写真 */
+#intermedial-section {
+  background-image: url(../images/bg.jpg);
+  height: 431px;
+  position: relative;
+}
+.medium-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+/* 文章 */
+.intermedial-sentence {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 21.7%;
+  left: 49%;
+}
+.intermedial-sentence p {
+  padding-bottom: 27.4px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 1.7;
+}
+
+
+/* CAT3
+---------------------------------------- */
+/* 背景 */
+#cat3 {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 604px;
+}
+/* 新着コンテナ */
+.new-arrivals {
+  height: 604px;
+}
+/* リスト */
+.new-arrivals-list {
+  list-style: none;
+  border-top: 1px solid #777777;
+}
+.new-arrivals-list li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #777777;
+}
+.new-arrivals-list a {
+  font-weight: bold;
+  padding-left: 22px;
+}
+.new-arrivals-list span {
+  color: #AE0009;
+  display: inline-block;
+  padding: 0 25px;
+  border: 1px solid #AE0009;
+  margin: 0 36px 0 16px;
+}
+.if-break {
+  display: inline;
+}
+/* ボタン */
+.button-container {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  padding: 10px 35.5px;
+  background-color: #AE0009;
+  color: #FFFFFF;
+  text-align: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+
+/* BOTTOM
+---------------------------------------- */
+/* 背景 */
+#bottom {
+  background-color: #AFAFAF;
+  width: 100%;
+  height: 329px;
+}
+/* フレックスボックス(BOTTOM) */
+.flexbox-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* フレックスコンテンツ(BOTTOM) */
+.flex-content-bottom {
+  width: 299.5px;
+  height: 189px;
+  margin-bottom: 30px;
+}
+.flex-content-bottom h3 {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.bottom-list {
+  padding-top: 29px;
+  list-style: none;
+  color: #FFFFFF;
+  line-height: 1;
+}
+.bottom-list li {
+  padding-bottom: 10px;
+}
+
+
+/* FOOTER
+---------------------------------------- */
+footer {
+  background-color: #707070;
+  text-align: center;
+  padding: 14.5px;
+}
+footer p {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+}
